@@ -1,0 +1,28 @@
+* {
+  width: auto;
+  height: auto;
+  font-family: "Hubballi", sans-serif;
+}
+
+main {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+p {
+  color: #ffffff;
+  font-weight: 500;
+}

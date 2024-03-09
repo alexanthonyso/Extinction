@@ -1,0 +1,14 @@
+.about h1 {
+  margin-left: 48%;
+}
+
+.about p {
+  position: absolute;
+  left: 32%;
+  top: 200px;
+  right: 30%;
+}
+
+.about-more {
+  margin-top: 10%;
+}

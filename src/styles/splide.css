@@ -1,0 +1,82 @@
+/* Styles généraux du conteneur du carrousel */
+.splide-container {
+  width: calc(100% - 200px);
+  position: absolute;
+  right: 0;
+}
+
+/* Styles pour les slides */
+
+.slide-wrapper img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.slide-wrapper img:hover {
+  filter: grayscale(0%);
+}
+.splide-container img {
+  width: 100%;
+}
+
+.info {
+  position: absolute;
+  top: 17%;
+  left: 6.3%;
+  
+}
+
+.info-two {
+  position: absolute;
+  top: 17%;
+  left: 6.3%;
+  pointer-events: none;
+}
+
+.info-tree {
+  position: absolute;
+  top: 70%;
+  left: 5.6%;
+  pointer-events: none;
+  
+}
+
+h2 {
+  position: absolute;
+  top: 0;
+  margin-left: 6%;
+  margin-top: 9%;
+  pointer-events: none;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.h2III {
+  margin-top: 56%;
+  margin-left: 5%;
+}
+
+/* splide pair */
+.splide-container .splide__slide {
+  width: calc(
+    100% - 43.188405%
+  ) !important; /* important remplace le style ajouté directement à l'HTMLElement par Splider de l'élement qui sera prioritaire */
+}
+
+/* splide impair, donc 1er, 3eme, 5eme, etc, les grandes images... */
+.splide-container .splide__slide:nth-child(2n + 1) {
+  width: 43.188405% !important;
+}
+
+/* arrow */
+.splide__arrow {
+  border-radius: 0;
+}
+
+.rhino-p{
+  display: flex;
+
+}
+
+
+
