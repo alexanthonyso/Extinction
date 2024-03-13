@@ -51,9 +51,11 @@ const ChartComponent = ({ data }) => {
                   return [firstElement, percentage + "%"];
                 },
                 font: {
-                  size: 12, // Changer la taille des étiquettes de l'axe x
+                  size: 14, // Changer la taille des étiquettes de l'axe x
                   weight: "bold",
+                  family: "Hubballi", // Changer la police d'écriture
                 },
+
                 color: "#D9D9D9",
                 maxRotation: 0, // Désactiver la rotation maximale
                 minRotation: 0, // Désactiver la rotation minimale
