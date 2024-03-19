@@ -25,8 +25,17 @@ function SplideSlider() {
           perPage: 2,
           perMove: 2,
           pagination: false,
-          speed: 2000, // Vitesse de transition en millisecondes
-          wheel: true, // Active le défilement avec la molette de la souris
+          speed: 2000,
+          wheel: true,
+          breakpoints: {
+            1000: {
+              perPage: 1,
+              perMove: 1,
+              type: "carousel",
+              direction: "ttb",
+              height: "none",
+            },
+          },
         }}
       >
         <SplideSlide>
@@ -128,9 +137,7 @@ function SplideSlider() {
           <div className="info">
             <p>SCIENTIFIC NAME : URSUS MARITIMUS</p>
             <p>POPULATION : 50 000 </p>
-            <p>
-              AREA : AFRICA
-            </p>
+            <p>AREA : AFRICA</p>
           </div>
           <img src={image10} alt="european brown bear" />
         </SplideSlide>
