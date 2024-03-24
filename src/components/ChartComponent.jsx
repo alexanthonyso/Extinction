@@ -19,9 +19,7 @@ const ChartComponent = ({ data }) => {
       chartInstance.current = new Chart(myChartRef, {
         type: "bar",
         data: {
-          labels: data.labels.map(
-            (label, index) => `${label} (${data.percentages[index]}%)`
-          ),
+          labels: data.labels.map((label, index) => `${label} )`),
           datasets: [
             {
               label: "PERCENTAGE",
@@ -44,11 +42,8 @@ const ChartComponent = ({ data }) => {
                   // Obtenez le premier élément de la constante data.labels
                   const firstElement = data.labels[index];
 
-                  // Obtenez le pourcentage correspondant à l'index actuel
-                  const percentage = data.percentages[index];
-
                   // Utilisez un saut de ligne pour placer le pourcentage en dessous du nom de l'élément
-                  return [firstElement, percentage + "%"];
+                  return [firstElement];
                 },
                 font: {
                   size: 14, // Changer la taille des étiquettes de l'axe x
@@ -92,9 +87,14 @@ const ChartComponent = ({ data }) => {
     <div>
       <canvas ref={chartRef} />
       <p>
+        "AMPHIBIANS 41%", "SHARKS & RAYS 37%", "REEF CORALS 36%", "CONIFERS 34%", "CRUSTACEANS 28%",
+        "MAMMALS 26%", "REPTILES 21%", "BIRDS 12%",
+      </p>
+      <p>
         More than 44,000 species are threatened with extinction. That is still
         28% of all assessed species.
       </p>
+
       <p>SOURCE: IUCN</p>
     </div>
   );

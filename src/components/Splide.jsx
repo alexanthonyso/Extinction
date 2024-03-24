@@ -34,8 +34,11 @@ function SplideSlider() {
               type: "carousel",
               direction: "ttb",
               height: "none",
+              wheel: true,
+              arrows: false,
             },
           },
+          
         }}
       >
         <SplideSlide>

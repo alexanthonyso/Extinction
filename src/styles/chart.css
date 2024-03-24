@@ -1,13 +1,43 @@
-
-
-
 .chart {
-  margin-left: 25%;
+  margin-left: 20%;
   margin-top: 5%;
-  width: 50%;
+  width: 72%;
 }
 
-.chart p{
+.chart p {
   margin-left: 20px;
   font-weight: 400;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .chart {
+    margin-left: 7%;
+    /* margin-top: 5%; */
+    width: 90%;
+  }
+
+  
+}
+
+@media screen and (max-width: 831px) {
+  .chart {
+    margin-left: 3%;
+    /* margin-top: 5%; */
+    width: 96%;
+}
+
+  
+}
+
+@media screen and (max-width: 755px) {
+  .chart {
+    margin-left: 3%;
+    /* margin-top: 5%; */
+    width: 96%;
+}
+
+  
 }

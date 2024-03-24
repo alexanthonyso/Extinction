@@ -35,3 +35,27 @@ h3 {
 h3:hover {
   border-bottom: 2px solid #ffffff;
 }
+
+@media screen and (max-width: 1000px) {
+  .menu {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 17px;
+  }
+  header {
+    position: relative;
+  }
+
+  .logo-container {
+    justify-content: center;
+  }
+  .logo-container a {
+    margin: 0;
+  }
+
+  .splide__arrows--ttb .splide__arrow--prev {
+    top: 0em;
+}
+}

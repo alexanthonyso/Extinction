@@ -90,6 +90,11 @@ h2 {
     filter: grayscale(0%);
     
   }
+
+  .splide-container{
+
+    width: 100%;
+  }
 }
 
 
@@ -102,8 +107,4 @@ h2 {
     font-size: 13px;
   }
 }
-@media screen and (max-width: 986px) {
-  h2 {
-    font-size: 20px;
-  }
-}
+
